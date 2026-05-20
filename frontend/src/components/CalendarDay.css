@@ -1,0 +1,33 @@
+.cal-day {
+  aspect-ratio: 1;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: default;
+  transition: transform 0.15s;
+}
+.cal-day:hover {
+  transform: scale(1.1);
+}
+.cal-day--empty {
+  background: transparent;
+  pointer-events: none;
+}
+.cal-day--future {
+  background: #111827;
+  color: #475569;
+  border: 1px solid #334155;
+}
+.cal-day--green {
+  background: rgba(16, 185, 129, 0.15);
+  color: #10b981;
+  border: 1px solid rgba(16, 185, 129, 0.3);
+}
+.cal-day--red {
+  background: rgba(239, 68, 68, 0.12);
+  color: #ef4444;
+  border: 1px solid rgba(239, 68, 68, 0.3);
+}

@@ -1,0 +1,71 @@
+.lb-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.9rem 1.1rem;
+  background: #111827;
+  border: 1px solid #334155;
+  border-radius: 14px;
+  margin-bottom: 0.6rem;
+  transition:
+    box-shadow 0.2s,
+    border-color 0.2s;
+}
+.lb-item:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+}
+.lb-item--you {
+  border-color: #10b981;
+  background: rgba(16, 185, 129, 0.06);
+}
+.lb-rank {
+  font-size: 1rem;
+  font-weight: 700;
+  width: 36px;
+  text-align: center;
+  color: #94a3b8;
+  flex-shrink: 0;
+}
+.lb-name {
+  flex: 1;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #f8fafc;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.you-tag {
+  font-size: 0.68rem;
+  font-weight: 700;
+  background: rgba(16, 185, 129, 0.2);
+  color: #10b981;
+  padding: 0.1rem 0.45rem;
+  border-radius: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.lb-bar-wrap {
+  flex: 2;
+}
+.lb-bar-track {
+  height: 8px;
+  background: #1e293b;
+  border-radius: 999px;
+  overflow: hidden;
+  border: 1px solid #334155;
+}
+.lb-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #10b981, #06b6d4);
+  border-radius: 999px;
+  transition: width 0.5s ease;
+}
+.lb-streak {
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: #10b981;
+  width: 55px;
+  text-align: right;
+  flex-shrink: 0;
+}
